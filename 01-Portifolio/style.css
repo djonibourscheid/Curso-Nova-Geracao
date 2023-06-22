@@ -1,5 +1,8 @@
 :root {
   font-size: 62.5%;
+
+  --white: #F6F6F6;
+  --light-blue: #22D4FD;
 }
 
 * {
@@ -10,7 +13,7 @@
 
 body {
   background-color: #000000;
-  color: #F6F6F6;
+  color: var(--white);
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
@@ -54,31 +57,50 @@ body {
   line-height: 3rem;
 }
 
+/* links */
 .presentation__links {
   display: flex;
-  justify-content: space-evenly;
-  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.presentation__links__subtitle {
+  font-family: 'Krona One', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .presentation__links__link {
-  color: #000000;
+  color: var(--light-blue);
   text-align: center;
-  padding: 2.2rem 5.4rem;
-  background-color: #22D4FD;
-  border-radius: 1rem;
-  text-decoration: none;
-  width: 22rem;
   font-weight: 600;
+  text-decoration: none;
+
+  border: 0.2rem solid var(--light-blue);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+
+  width: 22rem;
 
   transition: .3s ease-in-out;
 }
 
 .presentation__links__link:hover {
-  filter: brightness(80%) drop-shadow(.2rem .2rem 1rem rgb(34 212 253 / 20%));
   cursor: pointer;
+  color: var(--white);
+  background-color: #171717;
 }
 
-.presentation img {
+.presentation__links__link__image {
+  margin-right: 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.presentation__image {
   width: 42rem;
   height: 42rem;
   border-radius: 1rem;
@@ -100,12 +122,14 @@ body {
     line-height: 2.6rem;
   }
 
+  .presentation__links {}
+
   .presentation__links__link {
     padding: 1.2rem 3.4rem;
     width: 17rem;
   }
 
-  .presentation img {
+  .presentation__image {
     width: 30rem;
     height: 30rem;
   }
@@ -118,7 +142,7 @@ body {
     flex-direction: column-reverse;
   }
 
-  .presentation img {
+  .presentation__image {
     width: 15rem;
     height: 15rem;
   }
@@ -142,9 +166,34 @@ body {
     line-height: 2.2rem;
   }
 
+  .presentation__links__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
   .presentation__links {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+  }
+}
+
+
+/* 432px */
+@media (max-width: 27rem) {
+  .presentation__content__title {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .presentation__content__text,
+  .presentation__links__link {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .presentation__links__subtitle {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
 }
