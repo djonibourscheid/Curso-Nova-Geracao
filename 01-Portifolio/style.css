@@ -85,6 +85,11 @@ body {
 
   width: 22rem;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
   transition: .3s ease-in-out;
 }
 
@@ -95,9 +100,8 @@ body {
 }
 
 .presentation__links__link__image {
-  margin-right: 1.6rem;
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .presentation__image {
@@ -122,10 +126,8 @@ body {
     line-height: 2.6rem;
   }
 
-  .presentation__links {}
-
   .presentation__links__link {
-    padding: 1.2rem 3.4rem;
+    padding: 1.2rem;
     width: 17rem;
   }
 
@@ -176,6 +178,11 @@ body {
     align-items: center;
     gap: 1.5rem;
   }
+
+  .presentation__links__link__image {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }
 
 
@@ -195,5 +202,10 @@ body {
   .presentation__links__subtitle {
     font-size: 1.6rem;
     line-height: 2.5rem;
+  }
+
+  .presentation__links__link__image {
+    width: 2rem;
+    height: 2rem;
   }
 }
