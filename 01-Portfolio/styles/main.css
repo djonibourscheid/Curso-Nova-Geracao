@@ -148,8 +148,8 @@ a {
 
 /* image */
 .main__image {
-  width: 38rem;
-  height: 38rem;
+  width: 32rem;
+  height: 32rem;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem 0.3rem rgb(50 50 100);
 }
