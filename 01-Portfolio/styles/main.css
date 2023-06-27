@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 6rem;
 }
 
@@ -143,8 +143,8 @@ a {
 
 /* image */
 .main__image {
-  width: 42rem;
-  height: 42rem;
+  width: 38rem;
+  height: 38rem;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem 0.3rem rgb(50 50 100);
 }
