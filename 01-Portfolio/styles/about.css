@@ -16,7 +16,7 @@
   background-color: var(--light-blue);
 }
 
-.main__content__texts {
+.main__content__textWrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;

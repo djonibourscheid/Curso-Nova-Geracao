@@ -95,7 +95,7 @@ a {
 }
 
 .main__content__text,
-.main__links__link {
+.main__links__navegation {
   font-size: 2rem;
   line-height: 3rem;
 }
@@ -116,7 +116,7 @@ a {
   text-align: center;
 }
 
-.main__links__link {
+.main__links__navegation {
   color: var(--light-blue);
   text-align: center;
   font-weight: 600;
@@ -135,13 +135,13 @@ a {
   transition: var(--transition);
 }
 
-.main__links__link:hover {
+.main__links__navegation:hover {
   cursor: pointer;
   color: var(--white);
   background-color: var(--links-hover);
 }
 
-.main__links__link__image {
+.main__links__navegation__image {
   width: 2.4rem;
   height: 2.4rem;
 }

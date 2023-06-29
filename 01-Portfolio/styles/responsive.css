@@ -10,12 +10,12 @@
   }
 
   .main__content__text,
-  .main__links__link {
+  .main__links__navegation {
     font-size: 1.8rem;
     line-height: 2.6rem;
   }
 
-  .main__links__link {
+  .main__links__navegation {
     padding: 1.2rem;
     width: 17rem;
   }
@@ -61,7 +61,7 @@
   }
 
   .main__content__text,
-  .main__links__link {
+  .main__links__navegation {
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
@@ -77,7 +77,7 @@
     gap: 1.5rem;
   }
 
-  .main__links__link__image {
+  .main__links__navegation__image {
     width: 2.2rem;
     height: 2.2rem;
   }
@@ -105,7 +105,7 @@
   }
 
   .main__content__text,
-  .main__links__link {
+  .main__links__navegation {
     font-size: 1.4rem;
     line-height: 2rem;
   }
@@ -115,7 +115,7 @@
     line-height: 2.5rem;
   }
 
-  .main__links__link__image {
+  .main__links__navegation__image {
     width: 2rem;
     height: 2rem;
   }
