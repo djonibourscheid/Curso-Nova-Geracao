@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC | Lógica com JS</title>
+
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      gap: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    Calcule seu IMC:
+
+    <div class="field">
+      <label for="personHeight">Digite sua altura em cm:</label>
+      <input type="number" name="personHeight" id="personHeight" min="1" max="250">
+    </div>
+
+    <div class="field">
+      <label for="personWeight">Digite seu peso em kg:</label>
+      <input type="number" name="personWeight" id="personWeight" min="1" max="250">
+    </div>
+
+    <button type="button" onclick="calculate()">Calcular IMC</button>
+
+    <p class="result"></p>
+  </main>
+
+
+
+  <script>
+    const result = document.querySelector(".result");
+
+    function calculate() {
+      const personHeightEl = document.getElementById("personHeight");
+      const personWeightEl = document.getElementById("personWeight");
+
+      const personHeight = personHeightEl.value / 100;
+      const personWeight = personWeightEl.value;
+
+      personHeightEl.value = "";
+      personWeightEl.value = "";
+
+      const imc = (personWeight / (personHeight * personHeight)).toFixed();
+
+      if (isNaN(imc)) {
+        result.innerHTML = `Preencha os campos para calcular seu imc!`
+      } else {
+        result.innerHTML = `Seu IMC é ${imc}.`
+      }
+    }
+  </script>
+</body>
+
+</html>
