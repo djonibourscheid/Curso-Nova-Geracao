@@ -18,6 +18,7 @@
       flex-direction: column;
       height: 100vh;
       gap: 2rem;
+      text-align: center;
     }
   </style>
 </head>
@@ -60,9 +61,16 @@
       const imc = (personWeight / (personHeight * personHeight)).toFixed();
 
       if (isNaN(imc)) {
-        result.innerHTML = `Preencha os campos para calcular seu imc!`
+        result.innerHTML = "Preencha os campos para calcular seu imc!"
       } else {
-        result.innerHTML = `Seu IMC é ${imc}.`
+        result.innerHTML = `Seu IMC é ${imc}. <br>`
+        if (imc < 18.5) {
+          result.innerHTML += "Você está abaixo do recomendado";
+        } else if (imc >= 18.5 && imc <= 35) {
+          result.innerHTML += "Seu IMC está excelente!";
+        } else if (imc > 35) {
+          result.innerHTML += "Você está acima do recomendado";
+        }
       }
     }
   </script>
