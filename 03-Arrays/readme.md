@@ -9,6 +9,8 @@ Curso introdutório para manipulação de arrays em javascript.
 - **Como utilizar os métodos `.push()` e `.pop()`**:
   Adicionar um novo item ao final ou remover o último item do array.
 
+---
+
 ### Aula 2: Alterando arrays
 
 - **Separar um array em partes com `slice()`**:
@@ -25,6 +27,8 @@ Curso introdutório para manipulação de arrays em javascript.
   lista. Para acessar elementos das listas mais internas, devemos
   informar primeiro os índices das mais externas e depois os das mais
   internas, como por exemplo com `funcionarios[0][2]`.
+
+---
 
 ### Aula 3: Laços de repetição
 
@@ -44,6 +48,8 @@ Curso introdutório para manipulação de arrays em javascript.
   - O `for of` percorrer todos os elementos de um array, do início ao fim.
   - O `for` pode percorrer os elementos de diversas formas.
 
+---
+
 ### Aula 4: Funções callback
 
 - **Como utilizar o `forEach`**:
@@ -57,6 +63,8 @@ Curso introdutório para manipulação de arrays em javascript.
   O `map` também aceita funções callback, assim como o `forEach`, e é adequado para
   quando queremos "reescrever" os valores de um array, sem modificar o array original.
   Um novo array é criado com os valores reescritos.
+
+---
 
 ### Aula 5: Avançando em arrays
 
@@ -72,3 +80,12 @@ Curso introdutório para manipulação de arrays em javascript.
 - **Como utilizar a estrutura `Set`**:
   Como criar um `Set` a partir de um array existente, a fim de remover todas as suas
   duplicatas. E utilizar *spread operator* para converter o `Set` de volta em um lista.
+
+---
+
+## Professor e aluno
+
+Professor | Aluno
+:---:     | :---:
+<a href="https://github.com/antonio-evaldo" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/antonio-evaldo.png" alt="Foto do professor" title="Foto do professor"></a> | <a href="https://github.com/djonibourscheid" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/djonibourscheid.png" alt="Foto do aluno" title="Foto do aluno"></a>
+Antônio Evaldo | Djoni Bourscheid
