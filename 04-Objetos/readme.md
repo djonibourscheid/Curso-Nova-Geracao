@@ -32,9 +32,17 @@ Curso introdutório para manipulação de objetos em javascript.
 
 ### Aula 4: Conhecendo o JSON
 
+- **Como ler e utilizar as funções nativas do Node.js para manipular um JSON.**
+
 ---
 
 ### Aula 5: Exercitando os conhecimentos
+
+- **Utilizar métodos de listas em conjunto com objetos.**
+
+- **Como passar os parâmetros e propriedades dos objetos para alguns métodos de listas.**
+
+- **Encontrar, filtrar e ordenar uma lista de objetos.**
 
 ---
 
