@@ -38,10 +38,11 @@ listaControle.forEach((elemento) => {
   elemento.addEventListener("click", (evento) => {
     const controle = evento.target.parentNode;
     const operacao = evento.target.dataset.controle;
-    manipulaDados(controle, operacao);
 
-    const peca = evento.target.dataset.peca;
-    atualizaEstatistica(peca);
+    if (manipulaDados(controle, operacao)) {
+      const peca = evento.target.dataset.peca;
+      atualizaEstatistica(peca);
+    }
   });
 });
 
@@ -49,10 +50,32 @@ function manipulaDados(controle, operacao) {
   const peca = controle.querySelector("[data-contador]");
 
   if (operacao === "+") {
-    peca.value = parseInt(peca.value) + 1;
+    const conta = parseInt(peca.value) + 1;
+
+    // Caso um atributo fique abaixo de 0, cancela a ação.
+    if (conta < 0) {
+      alert(`O valor está abaixo de 0.`);
+      peca.value = 0;
+
+      return false;
+    }
+
+    peca.value = conta;
   } else if (operacao === "-") {
-    peca.value = parseInt(peca.value) - 1;
+    const conta = parseInt(peca.value) - 1;
+
+    // Caso um atributo fique abaixo de 0, cancela a ação.
+    if (conta < 0) {
+      alert(`O valor chegou no mínimo.`);
+      peca.value = 0;
+
+      return false;
+    }
+
+    peca.value = conta;
   }
+
+  return true;
 }
 
 function atualizaEstatistica(peca) {
@@ -67,6 +90,7 @@ function atualizaEstatistica(peca) {
     const atributosEstatistica = parseInt(estatistica.textContent);
 
     // Faz a soma dos atributos e atualiza o html
-    estatistica.innerText = atributosEstatistica + atributosPeca[atributo];
+    const conta = atributosEstatistica + atributosPeca[atributo];
+    estatistica.innerText = conta;
   });
 }
