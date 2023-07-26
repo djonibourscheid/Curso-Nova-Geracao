@@ -12,25 +12,43 @@ Curso para manipulação do DOM com javascript.
 
 ### Aula 2: Interagindo com uma página
 
-- **Selecionar um ou mais elementos com querySelector()/querySelectorAll().**
+- **Selecionar um ou mais elementos com `querySelector()`/`querySelectorAll()`.**
 
-- **Como utilizar o método addEventListener().**
+- **Como utilizar o método `addEventListener()`.**
 
 - **Diferenças entre função anônima e função.**
 
-- **Comportamento de hoisting no JavaScript.**
+- **Comportamento de *hoisting* no JavaScript.**
 
 ---
 
 ### Aula 3: Montando uma peça
 
+- **O que é Array e como manipular seus objetos.**
+
+- **Como utilizar arrow functions.**
+
+- **Como utilizar o método `splice()` para remover itens.**
+
 ---
 
 ### Aula 4: Montando um robô
 
+- **como utilizar a propriedade `parentNode`.**
+
+- **O que é `data-attributes`.**
+
+- **Funções para manipular elementos no DOM com `data-attributes`.**
+
 ---
 
 ### Aula 5: Calculando o poder
+
+- **O que são objetos e métodos para manipulá-los.**
+
+- **Refatorar o código do projeto, aprendendo como manipular *arrays* e utilizando `forEach`.**
+
+- **Projetos na nuvem utilizando vercel e github.**
 
 ---
 
