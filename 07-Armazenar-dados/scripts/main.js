@@ -1,17 +1,31 @@
+// .parse() passe de string para JSON
+const storage = JSON.parse(localStorage.getItem("toDoList")) || [];
+
 const formEl = document.getElementById("novoItem");
 const listEl = document.querySelector(".lista");
 
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const itemName = event.target.elements["nome"].value;
-  const itemAmount = event.target.elements["quantidade"].value;
+  // pegando os elementos html
+  const itemNameElem = event.target.elements["nome"];
+  const itemAmountElem = event.target.elements["quantidade"];
 
-  criaElemento(itemName, itemAmount);
+  // pegando os valores
+  const itemName = itemNameElem.value;
+  const itemAmount = Number(itemAmountElem.value);
+
+  // limpando os inputs
+  itemNameElem.value = "";
+  itemAmountElem.value = "";
+
+  // funções
+  createNewItem(itemName, itemAmount);
+  saveInList(itemName, itemAmount);
 });
 
-
-function criaElemento(name, amount) {
+// Funções
+function createNewItem(name, amount) {
   const newItem = document.createElement("li");
   newItem.className = "item";
 
@@ -21,5 +35,14 @@ function criaElemento(name, amount) {
   newItem.appendChild(amountEl);
   newItem.innerHTML += name;
 
-  listEl.appendChild(newItem);
+  return listEl.appendChild(newItem);
+}
+
+function saveInList(name, amount) {
+  const newItemStorage = { name, amount };
+
+  storage.push(newItemStorage);
+
+  // .stringfy() passa de json para string
+  localStorage.setItem("toDoList", JSON.stringify(storage));
 }
