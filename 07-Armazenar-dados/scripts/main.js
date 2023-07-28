@@ -1,10 +1,13 @@
 // .parse() passe de string para JSON
 const storage = JSON.parse(localStorage.getItem("toDoList")) || [];
 
-const formEl = document.getElementById("novoItem");
-const listEl = document.querySelector(".lista");
+const formElem = document.getElementById("novoItem");
+const listElem = document.querySelector(".lista");
 
-formEl.addEventListener("submit", (event) => {
+// Exibir itens salvos na tela
+showItems();
+
+formElem.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // pegando os elementos html
@@ -19,12 +22,36 @@ formEl.addEventListener("submit", (event) => {
   itemNameElem.value = "";
   itemAmountElem.value = "";
 
+
   // funções
-  createNewItem(itemName, itemAmount);
-  saveInList(itemName, itemAmount);
+  // Se ela não existir, cria e salva
+  if (!verifyIfExist(itemName, itemAmount)) {
+    createNewItem(itemName, itemAmount);
+    saveInList(itemName, itemAmount);
+  }
 });
 
+
 // Funções
+function showItems() {
+  storage.forEach(element => { createNewItem(element.name, element.amount) });
+}
+
+function verifyIfExist(itemName, itemAmount) {
+  for (const item of storage) {
+    // Caso já tenha um item com mesmo nome, soma a quantidade e atualiza
+    if (item.name == itemName) {
+      item.amount += itemAmount;
+
+      updateItems();
+
+      alert("Este item já consta na lista. Foi adicionado a quantidade informada à anterior.");
+
+      return true;
+    };
+  }
+}
+
 function createNewItem(name, amount) {
   const newItem = document.createElement("li");
   newItem.className = "item";
@@ -35,7 +62,7 @@ function createNewItem(name, amount) {
   newItem.appendChild(amountEl);
   newItem.innerHTML += name;
 
-  return listEl.appendChild(newItem);
+  listElem.appendChild(newItem);
 }
 
 function saveInList(name, amount) {
@@ -45,4 +72,14 @@ function saveInList(name, amount) {
 
   // .stringfy() passa de json para string
   localStorage.setItem("toDoList", JSON.stringify(storage));
+}
+
+function updateItems() {
+  localStorage.setItem("toDoList", JSON.stringify(storage));
+
+  // Remove todos os itens da lista
+  listElem.innerHTML = "";
+
+  // Mostra itens atualizados
+  showItems();
 }
