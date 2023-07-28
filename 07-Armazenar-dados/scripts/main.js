@@ -63,8 +63,19 @@ function createNewItem(item) {
 
   newItem.appendChild(amountEl);
   newItem.innerHTML += ` ${item.name}`;
+  newItem.setAttribute("title", "Remover item");
+
+  // Caso clicado, o item é deletado
+  newItem.addEventListener("click", () => deleteItem(item));
 
   listElem.appendChild(newItem);
+}
+
+function deleteItem(item) {
+  const indexItem = storage.indexOf(item);
+  storage.splice(indexItem, 1);
+
+  updateItems();
 }
 
 function saveInList(item) {
