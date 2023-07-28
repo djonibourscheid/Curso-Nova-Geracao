@@ -15,8 +15,10 @@ formElem.addEventListener("submit", (event) => {
   const itemAmountElem = event.target.elements["quantidade"];
 
   // pegando os valores
-  const itemName = itemNameElem.value;
-  const itemAmount = Number(itemAmountElem.value);
+  const item = {
+    name: itemNameElem.value,
+    amount: Number(itemAmountElem.value)
+  };
 
   // limpando os inputs
   itemNameElem.value = "";
@@ -25,23 +27,23 @@ formElem.addEventListener("submit", (event) => {
 
   // funções
   // Se ela não existir, cria e salva
-  if (!verifyIfExist(itemName, itemAmount)) {
-    createNewItem(itemName, itemAmount);
-    saveInList(itemName, itemAmount);
+  if (!verifyIfExist(item)) {
+    createNewItem(item);
+    saveInList(item);
   }
 });
 
 
 // Funções
 function showItems() {
-  storage.forEach(element => { createNewItem(element.name, element.amount) });
+  storage.forEach(element => { createNewItem(element) });
 }
 
-function verifyIfExist(itemName, itemAmount) {
-  for (const item of storage) {
+function verifyIfExist(item) {
+  for (const element of storage) {
     // Caso já tenha um item com mesmo nome, soma a quantidade e atualiza
-    if (item.name == itemName) {
-      item.amount += itemAmount;
+    if (element.name == item.name) {
+      element.amount += item.amount;
 
       updateItems();
 
@@ -52,23 +54,21 @@ function verifyIfExist(itemName, itemAmount) {
   }
 }
 
-function createNewItem(name, amount) {
+function createNewItem(item) {
   const newItem = document.createElement("li");
   newItem.className = "item";
 
   const amountEl = document.createElement("strong");
-  amountEl.innerText = amount;
+  amountEl.innerText = item.amount;
 
   newItem.appendChild(amountEl);
-  newItem.innerHTML += name;
+  newItem.innerHTML += ` ${item.name}`;
 
   listElem.appendChild(newItem);
 }
 
-function saveInList(name, amount) {
-  const newItemStorage = { name, amount };
-
-  storage.push(newItemStorage);
+function saveInList(item) {
+  storage.push(item);
 
   // .stringfy() passa de json para string
   localStorage.setItem("toDoList", JSON.stringify(storage));
