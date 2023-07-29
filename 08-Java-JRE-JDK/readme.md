@@ -35,11 +35,24 @@ Curso introdutório à Java e seus fundamentos.
   
 ---
 
-### Aula 3
+### Aula 3: Começando com Eclipse
+
+- O papel de um IDE e sua diferença de um editor
+- Como fazer o download do Eclipse IDE
+- Para que serve um workspace
+- O conceito de perspectiva
+- Como criar um projeto Java, inclusive classes e como executá-lo.
+- Como exibir diferentes views
 
 ---
 
-### Aula 4
+### Aula 4: Tipos e variáveis
+
+- Variáveis e tipos primitivos do Java e também concatenar com texto
+
+- Boas práticas na hora de nomear classes e também variáveis
+
+- `type casting` e como podemos passar um valor de um tipo para uma variável de outro
 
 ---
 
