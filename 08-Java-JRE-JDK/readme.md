@@ -49,14 +49,17 @@ Curso introdutório à Java e seus fundamentos.
 ### Aula 4: Tipos e variáveis
 
 - Variáveis e tipos primitivos do Java e também concatenar com texto
-
 - Boas práticas na hora de nomear classes e também variáveis
-
 - `type casting` e como podemos passar um valor de um tipo para uma variável de outro
 
 ---
 
-### Aula 5
+### Aula 5: Trabalhando com caracteres
+
+- O conceito e como declarar char e String
+- Como concatenar Strings
+- Atalho para criação da main
+- Variáveis guardam valores e não referências.
 
 ---
 
