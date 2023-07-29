@@ -36,9 +36,19 @@ Curso para manipulação do `Storage` com javascript.
 
 ### Aula 4: Atualizando um item
 
+- **Utilizar o operador de comparação `===`.**
+
+- **Utilizar o método `find()`.**
+
+- **Utilizar a condicional `if`, `else`.**
+
+- **Atualizar itens, tanto no navegador, quanto no localStorage.**
+
 ---
 
 ### Aula 5: Removendo um item
+
+- **Função para deletar itens de um array, utilizando os métodos `splice()`, `find()` e `remove()`.**
 
 ---
 

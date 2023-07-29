@@ -40,7 +40,7 @@ function showItems() {
 }
 
 function verifyIfExist(item) {
-  for (const element of storage) {
+  storage.find(element => {
     // Caso já tenha um item com mesmo nome, soma a quantidade e atualiza
     if (element.name == item.name) {
       element.amount += item.amount;
@@ -50,8 +50,8 @@ function verifyIfExist(item) {
       alert("Este item já consta na lista. Foi adicionado a quantidade informada à anterior.");
 
       return true;
-    };
-  }
+    }
+  });
 }
 
 function createNewItem(item) {
