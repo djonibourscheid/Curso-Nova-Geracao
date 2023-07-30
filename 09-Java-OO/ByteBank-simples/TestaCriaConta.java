@@ -1,4 +1,4 @@
-public class CriaConta {
+public class TestaCriaConta {
   public static void main(String[] args) {
     Conta primeiraConta = new Conta();
     primeiraConta.saldo += 200;
