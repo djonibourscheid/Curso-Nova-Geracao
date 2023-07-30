@@ -20,6 +20,10 @@ Curso sobre orientação de objetos no Java.
 ---
 
 ### Aula 3: Definindo comportamento
+
+- Como definir métodos com parâmetros e retorno
+- Como usar a referência `this`
+
 ---
 
 ### Aula 4: Composição de objetos
