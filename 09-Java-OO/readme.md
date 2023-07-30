@@ -11,6 +11,12 @@ Curso sobre orientação de objetos no Java.
 ---
 
 ### Aula 2: Vamos lá: Orientação a Objetos
+
+- O que é e como criar uma classe
+- Como criar um objeto ou instância de uma classe
+- O que são, como definir e visualizar valores de atributos
+- Como funciona a atribuição de uma referência à uma variável
+
 ---
 
 ### Aula 3: Definindo comportamento
