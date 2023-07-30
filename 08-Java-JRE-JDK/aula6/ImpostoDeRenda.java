@@ -5,7 +5,7 @@
   * De 3751.01 até 4664.00, o IR é de 22.5% e pode deduzir R$ 636
  */
 
-public class DesafioExtra {
+public class ImpostoDeRenda {
   public static void main(String[] args) {
     double salario = 2000;
     double porcentagemImpostoDeRenda;
