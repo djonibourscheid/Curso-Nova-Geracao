@@ -4,22 +4,25 @@ Curso sobre orientação de objetos no Java.
 
 ## O que foi aprendido durante o curso?
 
-### Aula 1: 
+### Aula 1: O problema do paradigma procedural
+
+- Conhecemos o paradigma procedural, que era utilizado como prática de programação antes da introdução das linguagens orientadas a objetos.
+
 ---
 
-### Aula 2: 
+### Aula 2: Vamos lá: Orientação a Objetos
 ---
 
-### Aula 3: 
+### Aula 3: Definindo comportamento
 ---
 
-### Aula 4: 
+### Aula 4: Composição de objetos
 ---
 
-### Aula 5: 
+### Aula 5: Encapsulamento e visibilidade
 ---
 
-### Aula 6: 
+### Aula 6: Construtores e membros estáticos
 ---
 
 ## Professor e aluno
