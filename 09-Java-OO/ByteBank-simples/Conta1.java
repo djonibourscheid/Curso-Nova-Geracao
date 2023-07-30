@@ -1,4 +1,4 @@
-public class Conta {
+public class Conta1 {
   double saldo;
   int agencia;
   int numero;
@@ -26,7 +26,7 @@ public class Conta {
   }
 
 
-  public boolean transferir(double valor, Conta destino) {
+  public boolean transferir(double valor, Conta1 destino) {
     if (this.saldo >= valor) {
       this.saldo -= valor;
       destino.saldo += valor;
