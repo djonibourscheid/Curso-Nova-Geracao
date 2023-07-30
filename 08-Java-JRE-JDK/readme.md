@@ -63,6 +63,14 @@ Curso introdutório à Java e seus fundamentos.
 
 ---
 
+### Aula 6: Praticando condicionais
+
+- Uso de `if`
+- Uso de operações lógicas AND `(&&)` e OR `(||)`
+- Escopo de variáveis
+
+---
+
 ## Professor e aluno
 
 Professor | Aluno
