@@ -71,6 +71,16 @@ Curso introdutório à Java e seus fundamentos.
 
 ---
 
+### Aula 7: Controlando fluxo com laços
+
+- A sintaxe do `while` e `for`
+- O operador `+=`
+- O operador ``++``
+- Laços aninhados
+- A funcionalidade do `break`
+
+----
+
 ## Professor e aluno
 
 Professor | Aluno
