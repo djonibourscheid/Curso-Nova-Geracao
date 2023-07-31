@@ -52,6 +52,11 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 6: Interfaces
 
+- Não existe herança múltipla em Java.
+- Conceitos de interface.
+- Diferenças entre classes abstratas e interfaces.
+- interfaces são uma alternativa a herança referente ao polimorfismo
+
 ---
 
 ### Aula 7: Praticando herança e interfaces
