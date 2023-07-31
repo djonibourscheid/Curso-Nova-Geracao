@@ -15,6 +15,12 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 2: Super e reescrita de métodos
 
+- Que classe mãe é chamada de `super` ou `base class`
+- Que a classe filha também é chamada de `sub class`
+- Como aumentar a visibilidade de um membro (atributo, método) através do `protected`
+- Como acessar ou chamar um membro (atributo, método) através do `super`
+- Como redefinir um método através da sobrescrita
+
 ---
 
 ### Aula 3: Entendendo Polimorfismo
