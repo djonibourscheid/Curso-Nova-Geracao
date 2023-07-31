@@ -93,7 +93,7 @@ public class Conta3 {
       destino.saldo += valor;
 
       System.out
-          .println("O valor de R$" + valor + " foi transferido com sucesso para a conta de " + destino.titular.nome
+          .println("O valor de R$" + valor + " foi transferido com sucesso para a conta de " + destino.titular.getNome()
               + ". O valor da sua conta agora é R$" + this.saldo);
       System.out.println();
       return true;
