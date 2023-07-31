@@ -34,6 +34,11 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 4: Herança e o uso construtores
 
+- Conceitos de herança, construtores e polimorfismo
+- A utilização da anotação `@Override`
+- Construtores não são herdados
+- Um construtor da classe mãe pode ser chamado através do `super()`
+
 ---
 
 ### Aula 5: Classes e métodos abstratos
