@@ -25,6 +25,11 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 3: Entendendo Polimorfismo
 
+- Objetos não mudam de tipo;
+- A referência pode mudar, e aí entra o polimorfismo;
+- O polimorfismo permite usar referências mais genéricas para a comunicação com um objeto;
+- O uso de referências mais genéricas permite desacoplar sistemas.
+
 ---
 
 ### Aula 4: Herança e o uso construtores
