@@ -1,9 +1,10 @@
 
 public class Funcionario {
 
+	// protected = publico apenas para filhos
 	private String nome;
 	private String cpf;
-	protected double salario; // Público para os filhos, privado para os demais
+	private double salario;
 	
 	
 	public double getBonificacao() {
