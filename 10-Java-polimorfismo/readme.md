@@ -71,5 +71,5 @@ Curso sobre polimorfismo no Java.
 
 Professor | Aluno
 :---:     | :---:
-<a href="https://github.com/peas" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/peas.png" alt="Foto do professor" title="Foto do professor"></a> | <a href="https://github.com/djonibourscheid" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/djonibourscheid.png" alt="Foto do aluno" title="Foto do aluno"></a>
-Paulo Silveira |Djoni Bourscheid
+<a href="https://github.com/steppat" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/steppat.png" alt="Foto do professor" title="Foto do professor"></a> | <a href="https://github.com/djonibourscheid" target="_blank" rel="noopener noreferrer"><img width="100" height="100" src="https://github.com/djonibourscheid.png" alt="Foto do aluno" title="Foto do aluno"></a>
+Nico Steppat |Djoni Bourscheid
