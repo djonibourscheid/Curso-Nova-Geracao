@@ -61,6 +61,10 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 7: Praticando herança e interfaces
 
+- Mais a fundo sobre o uso de interfaces
+- Trabalhamos mais a fundo com herança
+- Vimos outras aplicações de heranças e interfaces
+
 ---
 
 ## Professor e aluno
