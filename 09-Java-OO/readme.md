@@ -36,6 +36,13 @@ Curso sobre orientação de objetos no Java.
 ---
 
 ### Aula 5: Encapsulamento e visibilidade
+
+- Atributos privados, restringindo o acesso aos atributos
+- Encapsulamento de código
+- Métodos de leitura dos atributos, os `getters`
+- Métodos de modificação dos atributos, os `setters`
+- `Getters` e `Setters` de referência
+
 ---
 
 ### Aula 6: Construtores e membros estáticos
