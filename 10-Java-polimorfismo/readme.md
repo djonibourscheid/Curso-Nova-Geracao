@@ -43,6 +43,11 @@ Curso sobre polimorfismo no Java.
 
 ### Aula 5: Classes e métodos abstratos
 
+- O que são classes abstratas
+- Para que servem classes abstratas
+- O que são métodos abstratos
+- Para que servem métodos abstratos
+
 ---
 
 ### Aula 6: Interfaces
