@@ -4,7 +4,24 @@ public class Conta3 {
   private int numero;
   private Cliente3 titular;
 
+  private static int totalDeContas;
+
+  public Conta3(int agencia, int numero) {
+    totalDeContas++;
+
+    if (agencia <= 0 && numero <= 0) {
+      return;
+    }
+
+    this.agencia = agencia;
+    this.numero = numero;
+  }
+
   // Getters
+  public static int getTotalDeContas() {
+    return Conta3.totalDeContas;
+  }
+
   public double getSaldo() {
     return this.saldo;
   }
@@ -23,7 +40,7 @@ public class Conta3 {
 
   // Setters
   public boolean setAgencia(int valor) {
-    if (valor != 0) {
+    if (valor >= 0) {
       this.agencia = valor;
       return true;
     }
@@ -32,7 +49,7 @@ public class Conta3 {
   }
 
   public boolean setNumero(int valor) {
-    if (valor != 0) {
+    if (valor >= 0) {
       this.numero = valor;
       return true;
     }
