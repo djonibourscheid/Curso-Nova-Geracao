@@ -27,6 +27,12 @@ Curso sobre orientação de objetos no Java.
 ---
 
 ### Aula 4: Composição de objetos
+
+- Relacionamento entre classes através de composição.
+- Vantagens de se isolar informações repetidas em outra classe.
+- Detalhes da composição.
+- `NullPointerException` para atributos não inicializados e seus cuidados.
+
 ---
 
 ### Aula 5: Encapsulamento e visibilidade
