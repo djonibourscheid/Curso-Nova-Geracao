@@ -5,7 +5,7 @@ public class TestaBanco {
     djoni.cpf = "000.000.000-00";
     djoni.profissao = "Estudante";
 
-    Conta2 contaDoDjoni = new Conta2();
+    Conta contaDoDjoni = new Conta();
     contaDoDjoni.depositar(500);
     contaDoDjoni.titular = djoni;
     System.out.println("O títular da conta é: "+contaDoDjoni.titular.nome+", sua profissão é: "+contaDoDjoni.titular.profissao);
