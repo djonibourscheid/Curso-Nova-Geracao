@@ -1,12 +1,12 @@
-public class Conta3 {
+public class Conta {
   private double saldo;
   private int agencia;
   private int numero;
-  private Cliente3 titular;
+  private Cliente titular;
 
   private static int totalDeContas;
 
-  public Conta3(int agencia, int numero) {
+  public Conta(int agencia, int numero) {
     totalDeContas++;
 
     if (agencia <= 0 && numero <= 0) {
@@ -19,7 +19,7 @@ public class Conta3 {
 
   // Getters
   public static int getTotalDeContas() {
-    return Conta3.totalDeContas;
+    return Conta.totalDeContas;
   }
 
   public double getSaldo() {
@@ -34,7 +34,7 @@ public class Conta3 {
     return this.numero;
   }
 
-  public Cliente3 getTitular() {
+  public Cliente getTitular() {
     return this.titular;
   }
 
@@ -57,7 +57,7 @@ public class Conta3 {
     return false;
   }
 
-  public boolean setTitular(Cliente3 valor) {
+  public boolean setTitular(Cliente valor) {
     if (valor != null) {
       this.titular = valor;
       return true;
@@ -87,7 +87,7 @@ public class Conta3 {
     return false;
   }
 
-  public boolean transferir(double valor, Conta3 destino) {
+  public boolean transferir(double valor, Conta destino) {
     if (this.saldo >= valor) {
       this.saldo -= valor;
       destino.saldo += valor;
