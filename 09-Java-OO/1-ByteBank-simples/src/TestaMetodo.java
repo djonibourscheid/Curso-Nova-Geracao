@@ -1,6 +1,6 @@
 public class TestaMetodo {
   public static void main(String[] args) {
-    Conta1 contaDjoni = new Conta1();
+    Conta contaDjoni = new Conta();
     contaDjoni.titular = "Djoni Bourscheid";
 
     System.out.println("O valor da sua conta é de R$" + contaDjoni.saldo);
@@ -12,7 +12,7 @@ public class TestaMetodo {
 
     contaDjoni.depositar(90);
 
-    Conta1 contaJose = new Conta1();
+    Conta contaJose = new Conta();
     contaJose.titular = "José Alfredo Nunes";
 
     contaDjoni.transferir(50, contaJose);
