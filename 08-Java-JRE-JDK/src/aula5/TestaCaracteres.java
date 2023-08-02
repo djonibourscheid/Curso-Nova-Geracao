@@ -1,3 +1,5 @@
+package aula5;
+
 public class TestaCaracteres {
   public static void main(String[] args) {
     String frase1 = "Aprendendo com cursos na alura.";

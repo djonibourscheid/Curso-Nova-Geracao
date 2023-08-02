@@ -1,3 +1,5 @@
+package aula7;
+
 public class Fatorial {
   public static void main(String[] args) {
     System.out.println("Os fatoriais de 1 a 10:");

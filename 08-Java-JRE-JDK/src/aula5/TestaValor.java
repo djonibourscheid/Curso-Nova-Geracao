@@ -1,3 +1,5 @@
+package aula5;
+
 public class TestaValor {
   public static void main(String[] args) {
     int valor1 = 5;

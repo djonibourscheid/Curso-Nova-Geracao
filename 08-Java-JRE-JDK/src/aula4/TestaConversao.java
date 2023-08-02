@@ -1,3 +1,5 @@
+package aula4;
+
 public class TestaConversao {
   public static void main(String[] args) {
     double salario = 523.2;

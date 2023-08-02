@@ -1,3 +1,5 @@
+package aula7;
+
 /*
  * Transforme em for:
   int contador = 0;
