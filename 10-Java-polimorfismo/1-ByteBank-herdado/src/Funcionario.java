@@ -1,11 +1,17 @@
-public class Funcionario {
+/*
+ * Abstract faz o funcionario se tomar um conceito, não se pode criar
+ * um objeto do tipo funcionário, apenas coisas que extendem o funcionario.
+
+ * Abstract no metodo significa que ele não tem corpo, serve para ter
+ * referencia nos filhos
+ */
+
+public abstract class Funcionario {
   private String nome;
   private String cpf;
   private double salario;
 
-  public double getBonificacao() {
-    return this.salario * 0.1;
-  }
+  public abstract double getBonificacao();
 
   public String getNome() {
     return nome;
