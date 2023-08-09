@@ -12,6 +12,11 @@ public class TesteReferencia {
     d1.setNome("Carlos");
     d1.setSalario(2500);
 
+    Autenticavel gerenteAutenticavel = new Gerente();
+    Autenticavel admAutenticavel = new Administrador();
+    gerenteAutenticavel.setSenha(1000 );
+    admAutenticavel.setSenha(500);
+
     ControleBonificacao controle = new ControleBonificacao();
     controle.registraBonificacao(g1);
     controle.registraBonificacao(ev1);
