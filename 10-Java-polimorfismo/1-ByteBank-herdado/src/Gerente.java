@@ -1,23 +1,25 @@
 public class Gerente extends Funcionario implements Autenticavel {
-  private int senha;
+  private AutenticavelUtils util;
 
-  @Override
-  public double getBonificacao() {
-    System.out.println("Chamando bonificação do Gerente");
-    return super.getSalario();
+  public Gerente() {
+    this.util = new AutenticavelUtils();
   }
 
+  // devido ao Autenticavel
   @Override
   public void setSenha(int senha) {
-    this.senha = senha;
+    this.util.setSenha(senha);
   }
 
   @Override
   public boolean autentica(int senha) {
-    if (this.senha == senha) {
-      return true;
-    }
+    return this.util.autentica(senha);
+  }
 
-    return false;
+  // herdados de Funcionario
+  @Override
+  public double getBonificacao() {
+    System.out.println("Chamando bonificação do Gerente");
+    return super.getSalario();
   }
 }
