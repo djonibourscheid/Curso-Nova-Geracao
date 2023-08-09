@@ -7,17 +7,58 @@
   <title>Sumário</title>
 
   <style>
+    /* Firefox */
+    body {
+      scrollbar-width: auto;
+      scrollbar-color: rgb(100, 100, 100) transparent;
+    }
+
+    /* Chrome, Edge, and Safari */
+    ::-webkit-scrollbar {
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-right: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(100, 100, 100);
+      cursor: move;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+      border: none;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
+      background: #041832 linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
+      color: white;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
     }
 
     main {
-      display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
       gap: 0.75rem;
+    }
+
+    footer {
+      align-items: center;
+      margin: 0.75rem 0;
+    }
+
+    a {
+      color: inherit;
     }
   </style>
 </head>
@@ -28,13 +69,23 @@
     <a href="./02-Logica/index.html">Lógica de programação com JavaScript</a>
     <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/03-Arrays" target="_blank"
       rel="noopener noreferrer">JavaScript: Arrays</a>
-    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/04-Objetos" target="_blank" rel="noopener noreferrer">JavaScript: Objetos</a>
+    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/04-Objetos" target="_blank"
+      rel="noopener noreferrer">JavaScript: Objetos</a>
     <a href="./05-Manipulando-DOM/index.html">JavaScript: Manipuçando o DOM</a>
-    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/06-Git-Github" target="_blank" rel="noopener noreferrer">Git e GitHub</a>
+    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/06-Git-Github" target="_blank"
+      rel="noopener noreferrer">Git e GitHub</a>
     <a href="./07-Armazenar-dados/index.html">JavaScript na Web: armazenando dados no navegador</a>
-    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/08-Java-JRE-JDK" target="_blank" rel="noopener noreferrer">Java JRE e JDK: compile e execute o seu programa</a>
-    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/09-Java-OO" target="_blank" rel="noopener noreferrer">Java Orientado a Objetos</a>
+    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/08-Java-JRE-JDK" target="_blank"
+      rel="noopener noreferrer">Java JRE e JDK: compile e execute o seu programa</a>
+    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/09-Java-OO" target="_blank"
+      rel="noopener noreferrer">Java Orientado a Objetos</a>
+    <a href="https://github.com/djonibourscheid/curso-nova-geracao/tree/main/10-Java-polimorfismo" target="_blank"
+      rel="noopener noreferrer">Java Polimorfismo</a>
   </main>
+
+  <footer>Desenvolvido por
+    <a href="http://github.com/djonibourscheid" target="_blank" rel="noopener noreferrer">Djoni Bourscheid</a>
+  </footer>
 </body>
 
 </html>
